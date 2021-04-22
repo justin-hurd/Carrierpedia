@@ -49,7 +49,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>Carrierpedia 11.2.0 — 
 
-Modified : 2021/04/21 @ 04:34</title>
+Modified : 2021/04/21 @ 23:19</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -237,6 +237,14 @@ Error message and password prompt
 
 <li>$:/DefaultTiddlers</li>
 
+<li>$:/GitHub/Filename</li>
+
+<li>$:/GitHub/Path</li>
+
+<li>$:/GitHub/Repo</li>
+
+<li>$:/GitHub/Username</li>
+
 <li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
@@ -407,6 +415,8 @@ Error message and password prompt
 
 <li>$:/state/tab-1749438307</li>
 
+<li>$:/state/tab-2065006209</li>
+
 <li>$:/state/tab/JDconfig-1193531305</li>
 
 <li>$:/state/tab/moresidebar-1850697562</li>
@@ -519,11 +529,11 @@ Error message and password prompt
 
 <li>$:/trashbin/Series Ideas</li>
 
+<li>Brain Dump</li>
+
 <li>Characters</li>
 
 <li>Cheatsheet</li>
-
-<li>Draft of 'PAGE ONE - (# of) PANELS'</li>
 
 <li>Factions</li>
 
@@ -10671,6 +10681,18 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20210211035012660" modified="20210211035012660" title="$:/DefaultTiddlers">
 <pre>[list[$:/StoryList]]</pre>
 </div>
+<div created="20210422030513891" modified="20210422030515662" title="$:/GitHub/Filename">
+<pre>index.html</pre>
+</div>
+<div created="20210422031252977" modified="20210422031252977" title="$:/GitHub/Path">
+<pre>/</pre>
+</div>
+<div created="20210422030448319" modified="20210422031926043" title="$:/GitHub/Repo">
+<pre>justin-hurd/Carrierpedia</pre>
+</div>
+<div created="20210422030439820" modified="20210422030441775" title="$:/GitHub/Username">
+<pre>justin-hurd</pre>
+</div>
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
@@ -12445,7 +12467,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20210211040019758" modified="20210216054241854" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20210211035947562" modified="20210421081903267" title="$:/state/sidebar">
+<div created="20210211035947562" modified="20210422030518373" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210211073508123" modified="20210211073532971" title="$:/state/tab--1418380610">
@@ -12469,8 +12491,11 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20210211062814685" modified="20210211062824004" title="$:/state/tab-1646355321">
 <pre>$:/core/ui/TiddlerInfo/Advanced</pre>
 </div>
-<div created="20210211033708692" modified="20210416082024358" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20210211033708692" modified="20210422030425228" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
+</div>
+<div created="20210422030429507" modified="20210422030435261" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20210302142601655" modified="20210302142637926" title="$:/state/tab/JDconfig-1193531305">
 <pre>$:/plugins/jd/mob/config/fonts</pre>
@@ -12511,7 +12536,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210421081726121" list="[[Info Dump Page]] Notes [[Draft of 'PAGE ONE - (# of) PANELS']]" modified="20210421081852742" title="$:/StoryList">
+<div created="20210422030423253" list="$:/ControlPanel" modified="20210422030423253" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210211080048423" list="$:/plugins/tiddlywiki/menubar/items/hamburger $:/plugins/tiddlywiki/menubar/items/topleftbar $:/plugins/tiddlywiki/menubar/items/contents $:/plugins/tiddlywiki/menubar/items/search $:/plugins/tiddlywiki/menubar/items/pagecontrols $:/plugins/tiddlywiki/menubar/items/server $:/plugins/tiddlywiki/menubar/items/toprightbar $:/tags/TopLeftBar $:/plugins/tiddlywiki/menubar/items/sidebar" modified="20210211080103248" title="$:/tags/MenuBar">
@@ -12911,6 +12936,18 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
     &quot;created&quot;: &quot;20210303054520607&quot;
 }</pre>
 </div>
+<div created="20210421081906367" modified="20210422030420850" tags="Notes" title="Brain Dump">
+<pre>```
+King of Hearts		- Ampere (Anarchist)
+King of Spades		- 
+King of Clubs		- Hunter ()
+King of Diamonds	- Nesset (Capitalist)
+
+Queen of Hearts		-
+Queen of Spades		-
+Queen of Clubs		-
+Queen of Diamonds	-</pre>
+</div>
 <div color="#ef50ef" created="20210301122814507" modified="20210301123710571" order="1" tags="Glossary" title="Characters">
 <pre></pre>
 </div>
@@ -12974,18 +13011,6 @@ Formatting
 ,,&lt;$button to=&quot;JMH/PersonalStylesheet&quot; style=&quot;border-radius: 12px; background-color:&lt;&lt;colour page-background&gt;&gt;; padding: 1px 7px 1px 7px;&quot;&gt;&lt;b&gt;Stylesheet&lt;/b&gt;
 &lt;/$button&gt;,,&amp;nbsp;
 &lt;/p&gt;</pre>
-</div>
-<div created="20210421081906367" draft.of="PAGE ONE - (# of) PANELS" draft.title="Brain Dump" modified="20210421083420606" tags="Notes" title="Draft of 'PAGE ONE - (# of) PANELS'">
-<pre>```
-King of Hearts		- Ampere (Anarchist)
-King of Spades		- 
-King of Clubs		- Hunter ()
-King of Diamonds	- Nesset (Capitalist)
-
-Queen of Hearts		-
-Queen of Spades		-
-Queen of Clubs		-
-Queen of Diamonds	-</pre>
 </div>
 <div color="#9f50ef" created="20210301123049936" modified="20210301123651237" order="3" tags="Glossary" title="Factions">
 <pre></pre>
